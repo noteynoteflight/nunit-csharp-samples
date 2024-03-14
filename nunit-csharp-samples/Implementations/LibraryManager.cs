@@ -1,26 +1,35 @@
-/// <summary>
-/// A manager for a library's collection of books.
-/// </summary>
-public class LibraryManager : ILibraryManager
-{
-    private List<Book> _books;
+using System;
+using System.Collections.Generic;
 
-    /// <summary>
-    /// Adds a book to the library's collection.
-    /// </summary>
-    /// <param name="book">The book to add.</param>
+public class LibraryManager
+{
+    private List<Book> books = new List<Book>();
+
     public void AddBook(Book book)
     {
-        // TODO step 1.
-        // TODO step 2.
+        if (book == null)
+        {
+            throw new ArgumentNullException(nameof(book), "Cannot add a null book.");
+        }
+
+        books.Add(book);
+        Console.WriteLine($"Book '{book.Title}' added to the library.");
     }
 
-    /// <summary>
-    /// Removes a book from the library's collection.
-    /// </summary>
-    /// <param name="book">The book to remove.</param>
     public void RemoveBook(Book book)
     {
-        // TODO step 1.
+        if (book == null)
+        {
+            throw new ArgumentNullException(nameof(book), "Cannot remove a null book.");
+        }
+
+        if (books.Remove(book))
+        {
+            Console.WriteLine($"Book '{book.Title}' removed from the library.");
+        }
+        else
+        {
+            Console.WriteLine($"Book '{book.Title}' not found in the library.");
+        }
     }
 }

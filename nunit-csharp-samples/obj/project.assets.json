@@ -1,83 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
-      "NUnit/4.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/nunit.framework.dll": {
-            "related": ".legacy.xml;.xml"
-          },
-          "lib/net6.0/nunit.framework.legacy.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/nunit.framework.dll": {
-            "related": ".legacy.xml;.xml"
-          },
-          "lib/net6.0/nunit.framework.legacy.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/NUnit.props": {}
-        }
-      }
-    }
+    "net8.0": {}
   },
-  "libraries": {
-    "NUnit/4.1.0": {
-      "sha512": "MT/DpAhjtiytzhTgTqIhBuWx4y26PKfDepYUHUM+5uv4TsryHC2jwFo5e6NhWkApCm/G6kZ80dRjdJFuAxq3rg==",
-      "type": "package",
-      "path": "nunit/4.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "CHANGES.md",
-        "LICENSE.txt",
-        "NOTICES.md",
-        "README.md",
-        "THIRD_PARTY_NOTICES.md",
-        "build/NUnit.props",
-        "icon.png",
-        "lib/net462/nunit.framework.dll",
-        "lib/net462/nunit.framework.legacy.dll",
-        "lib/net462/nunit.framework.legacy.xml",
-        "lib/net462/nunit.framework.xml",
-        "lib/net6.0/nunit.framework.dll",
-        "lib/net6.0/nunit.framework.legacy.dll",
-        "lib/net6.0/nunit.framework.legacy.xml",
-        "lib/net6.0/nunit.framework.xml",
-        "nunit.4.1.0.nupkg.sha512",
-        "nunit.nuspec"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net8.0": [
-      "NUnit >= 4.1.0"
-    ]
+    "net8.0": []
   },
   "packageFolders": {
-    "/Users/vanyachernov/.nuget/packages/": {}
+    "C:\\Users\\йцукен\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vanyachernov/Desktop/nunit-csharp-samples/nunit-csharp-samples/nunit-csharp-samples.csproj",
+      "projectUniqueName": "C:\\Clone\\nunit-csharp-samples\\nunit-csharp-samples\\nunit-csharp-samples.csproj",
       "projectName": "nunit-csharp-samples",
-      "projectPath": "/Users/vanyachernov/Desktop/nunit-csharp-samples/nunit-csharp-samples/nunit-csharp-samples.csproj",
-      "packagesPath": "/Users/vanyachernov/.nuget/packages/",
-      "outputPath": "/Users/vanyachernov/Desktop/nunit-csharp-samples/nunit-csharp-samples/obj/",
+      "projectPath": "C:\\Clone\\nunit-csharp-samples\\nunit-csharp-samples\\nunit-csharp-samples.csproj",
+      "packagesPath": "C:\\Users\\йцукен\\.nuget\\packages\\",
+      "outputPath": "C:\\Clone\\nunit-csharp-samples\\nunit-csharp-samples\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/vanyachernov/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\йцукен\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -95,29 +45,17 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
-        "dependencies": {
-          "NUnit": {
-            "target": "Package",
-            "version": "[4.1.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "frameworkReferences": {
-          "Microsoft.NETCore.App": {
-            "privateAssets": "all"
-          }
-        },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
