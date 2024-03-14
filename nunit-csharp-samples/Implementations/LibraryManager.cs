@@ -4,15 +4,25 @@
 public class LibraryManager : ILibraryManager
 {
     private List<Book> _books;
-
+    /// <summary>
+    /// Gets or sets a book articul.
+    /// </summary>
+    public string Articul { get; set; }
     /// <summary>
     /// Adds a book to the library's collection.
     /// </summary>
     /// <param name="book">The book to add.</param>
     public void AddBook(Book book)
     {
-        // TODO step 1.
-        // TODO step 2.
+        if (!string.IsNullOrEmpty(book.Articul))
+        {
+            books.Add(book);
+            Console.WriteLine($"Book added: {book.Title}");
+        }
+        else
+        {
+            Console.WriteLine("Error: Book articul is missing.");
+        }
     }
 
     /// <summary>
